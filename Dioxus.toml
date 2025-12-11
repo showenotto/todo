@@ -1,0 +1,33 @@
+[application]
+
+[bundle]
+identifier = "com.showen"
+publisher = "Showen"
+icon = [
+  "assets/icon.ico",
+  "assets/icon-32.png",
+  "assets/icon-128.png",
+  "assets/icon-512.png",
+  "assets/icon-1024.png"
+]
+resources = ["assets"]        
+
+[web.app]
+
+# HTML title tag content
+title = "todo"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = []
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []

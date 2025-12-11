@@ -1,0 +1,2 @@
+cargo:warning=GNU windows targets have some limitations within Wry. Using the MSVC windows toolchain is recommended. If you would like to use continue using GNU, you can read https://github.com/wravery/webview2-rs#cross-compilation and disable this warning by adding the gnu feature to dioxus-desktop in your Cargo.toml
+cargo:rerun-if-changed=./src/ts/native_eval.ts

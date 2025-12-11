@@ -1,0 +1,10 @@
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/const_serialize-a8e2b688fecc8e66.d: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_buffers.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_vec.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/../README.md
+
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/libconst_serialize-a8e2b688fecc8e66.rlib: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_buffers.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_vec.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/../README.md
+
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/libconst_serialize-a8e2b688fecc8e66.rmeta: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_buffers.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_vec.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/../README.md
+
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/lib.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_buffers.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/const_vec.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/const-serialize-0.7.2/src/../README.md:

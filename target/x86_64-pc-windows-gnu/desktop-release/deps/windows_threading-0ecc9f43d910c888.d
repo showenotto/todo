@@ -1,0 +1,10 @@
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/windows_threading-0ecc9f43d910c888.d: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/bindings.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/pool.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/../readme.md
+
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/libwindows_threading-0ecc9f43d910c888.rlib: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/bindings.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/pool.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/../readme.md
+
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/libwindows_threading-0ecc9f43d910c888.rmeta: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/bindings.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/pool.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/../readme.md
+
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/lib.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/bindings.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/pool.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/windows-threading-0.1.0/src/../readme.md:

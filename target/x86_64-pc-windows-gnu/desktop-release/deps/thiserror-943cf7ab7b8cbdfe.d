@@ -1,0 +1,14 @@
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/thiserror-943cf7ab7b8cbdfe.d: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs /home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/build/thiserror-942e07f30c2781d8/out/private.rs
+
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/libthiserror-943cf7ab7b8cbdfe.rlib: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs /home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/build/thiserror-942e07f30c2781d8/out/private.rs
+
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/deps/libthiserror-943cf7ab7b8cbdfe.rmeta: /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs /home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs /home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/build/thiserror-942e07f30c2781d8/out/private.rs
+
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/lib.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/aserror.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/display.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/var.rs:
+/home/showen/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.17/src/private.rs:
+/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/build/thiserror-942e07f30c2781d8/out/private.rs:
+
+# env-dep:OUT_DIR=/home/showen/Documents/dioxus/todo/target/x86_64-pc-windows-gnu/desktop-release/build/thiserror-942e07f30c2781d8/out
