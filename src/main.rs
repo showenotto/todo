@@ -1,6 +1,19 @@
 use dioxus::prelude::*;
 use dioxus::desktop::tao::window::WindowBuilder;
 use rusqlite::Connection;
+use std::path::{PathBuf};
+use directories::ProjectDirs;
+use std::sync::mpsc::channel;
+
+// Android-specific imports (only compiled on Android targets)
+#[cfg(target_os = "android")]
+use dioxus::mobile::wry::prelude::dispatch;
+#[cfg(target_os = "android")]
+use jni::objects::{JObject, JString};
+#[cfg(target_os = "android")]
+use jni::JNIEnv;
+#[cfg(target_os = "android")]
+use anyhow::Result as AnyResult;
 
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 
@@ -19,10 +32,11 @@ fn main() {
 
 #[component]
 fn App() -> Element {
+    let db_path = get_db_path();
+    let db_path_str = db_path.to_string_lossy().to_string();
 
-    // A signal to store the Database connection
-    let con = use_signal(|| Connection::open("./data.db3").unwrap());
-    let conn = Connection::open("./data.db3").expect("Failed to open SQLite database");
+    let conn = Connection::open(&db_path_str).expect("Failed to open SQLite database");
+    let con = use_signal(|| Connection::open(&db_path_str).unwrap());
     // Ensure the table exists
     conn.execute(
         "CREATE TABLE IF NOT EXISTS todo (
@@ -141,6 +155,68 @@ fn TodoElement(item : TodoItem, callback : Callback<TodoItem>) -> Element{
             }
         }
     )
+}
+
+pub fn get_db_path() -> PathBuf {
+    // Desktop platforms: Linux, macOS, Windows
+    #[cfg(not(any(target_os = "android", target_os = "ios", target_arch = "wasm32")))]
+    {
+        if let Some(proj_dirs) = ProjectDirs::from("com", "showen", "TodoApp") {
+            let data_dir = proj_dirs.data_dir();
+            let _ = std::fs::create_dir_all(data_dir); // Ensure it exists
+            return data_dir.join("data.db3");
+        }
+        // Fallback if directories fails
+        PathBuf::from("data.db3")
+    }
+
+    // Android: Private internal files dir via JNI
+    #[cfg(target_os = "android")]
+    {
+        let (tx, rx) = channel::<anyhow::Result<PathBuf>>();
+
+        dispatch(move |env: &mut JNIEnv, activity: &JObject, _webview| {
+            let result = (|| -> anyhow::Result<PathBuf> {
+                let files_dir = env
+                    .call_method(activity, "getFilesDir", "()Ljava/io/File;", &[])?
+                    .l()?;
+
+                let path_jstring: JString = env
+                    .call_method(files_dir, "getAbsolutePath", "()Ljava/lang/String;", &[])?
+                    .l()?
+                    .into();
+
+                let path: String = env.get_string(&path_jstring)?.into();
+
+                Ok(PathBuf::from(path))
+            })();
+
+            let _ = tx.send(result);
+        });
+
+        let base_dir = rx.recv().expect("Channel closed").expect("Failed to get Android files dir");
+        base_dir.join("data.db3")
+       
+    }
+
+    // iOS: App Documents directory (sandboxed, writable)
+    #[cfg(target_os = "ios")]
+    {
+        let home = std::env::var("HOME").unwrap_or_else(|_| ".".to_string());
+        let mut path = PathBuf::from(home);
+        path.push("Documents");
+        let _ = std::fs::create_dir_all(&path);
+        path.push("data.db3");
+        path
+    }
+
+    // Ultimate fallback (e.g., web/WASM – no persistent storage)
+    #[cfg(not(any(
+        not(any(target_os = "android", target_os = "ios", target_arch = "wasm32")),
+        target_os = "android",
+        target_os = "ios"
+    )))]
+    PathBuf::from("data.db3")
 }
 
 #[derive(PartialEq, Eq, Clone, Debug)]

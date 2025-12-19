@@ -8,8 +8,14 @@ edition = "2021"
 
 [dependencies]
 dioxus = { version = "0.7.1", features = ["desktop"] }
+directories = "6.0.0"
+jni = "0.21"
 #rusqlite = "0.37.0"
 rusqlite = { version = "0.37.0", features = ["bundled"] }
+
+[target.'cfg(target_os = "android")'.dependencies]
+jni = "0.21"
+anyhow = "1.0"
 
 
 
