@@ -12,6 +12,9 @@ icon = [
 ]
 resources = ["assets"]        
 
+[bundle.windows]
+wix = {}
+
 [web.app]
 
 # HTML title tag content
